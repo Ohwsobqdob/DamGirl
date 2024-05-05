@@ -1,8 +1,12 @@
 <?php
-$myfile = fopen("./vol/newfile.txt", "w") or die("Unable to open file!");
-$txt = "John Doe\n";
-fwrite($myfile, $txt);
-$txt = "Jane Doe\n";
-fwrite($myfile, $txt);
-fclose($myfile);
+$dir = ".";
+
+// Sort in ascending order - this is default
+$a = scandir($dir);
+
+// Sort in descending order
+$b = scandir($dir,1);
+
+print_r($a);
+print_r($b);
 ?>
