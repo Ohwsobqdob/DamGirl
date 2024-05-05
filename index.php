@@ -1,8 +1,11 @@
 <?php
-$myfile = fopen("./vol/storage/newfile.txt", "w") or die("Unable to open file!");
-$txt = "Mickey Mouse\n";
-fwrite($myfile, $txt);
-$txt = "Minnie Mouse\n";
-fwrite($myfile, $txt);
-fclose($myfile);
+$dir = $_SERVER['DOCUMENT_ROOT'];
+
+// Sort in ascending order - this is default
+$a = scandir($dir);
+
+// Sort in descending order
+$b = scandir($dir,1);
+
+print_r($a);//print_r($b);
 ?>
