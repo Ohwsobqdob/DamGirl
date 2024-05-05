@@ -1,5 +1,5 @@
 <?php
-$myfile = fopen(".vol/storage/newfile.txt", "w") or die("Unable to open file!");
+$myfile = fopen("./vol/storage/newfile.txt", "w") or die("Unable to open file!");
 $txt = "Mickey Mouse\n";
 fwrite($myfile, $txt);
 $txt = "Minnie Mouse\n";
