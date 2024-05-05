@@ -1,5 +1,5 @@
 <?php
-$dir = ".";
+$dir = "./vol";
 
 // Sort in ascending order - this is default
 $a = scandir($dir);
